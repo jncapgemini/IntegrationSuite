@@ -1,0 +1,3 @@
+https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_bulkcreation_bind/je_bulkcreation_bind?sap-client=150
+
+
