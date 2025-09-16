@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions targetNamespace="http://camel.apache.org/cxf/jaxws/provider" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://camel.apache.org/cxf/jaxws/provider" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:n1="http://cxf.component.camel.apache.org/">
+ <wsdl:documentation>
+  <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+ </wsdl:documentation>
+ <wsp:UsingPolicy wsdl:required="true"/>
+ <wsp:Policy wsu:Id="IF_IF_DefaultPayloadProviderSEI">
+  <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+   <sapsession:enableSession>false</sapsession:enableSession>
+  </sapsession:Session>
+ </wsp:Policy>
+ <wsp:Policy wsu:Id="OP_IF_OP_invoke">
+  <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+  <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+  <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+  <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+ </wsp:Policy>
+ <wsdl:types>
+  <xsd:schema targetNamespace="http://cxf.component.camel.apache.org/" xmlns="http://cxf.component.camel.apache.org/" xmlns:xi0="http://cxf.component.camel.apache.org/">
+   <xsd:element name="invoke" nillable="true" type="xsd:anyType"/>
+   <xsd:element name="invokeResponse" nillable="true" type="xsd:anyType"/>
+  </xsd:schema>
+ </wsdl:types>
+ <wsdl:message name="invoke">
+  <wsdl:part name="invoke" element="n1:invoke"/>
+ </wsdl:message>
+ <wsdl:message name="invokeResponse">
+  <wsdl:part name="invokeResponse" element="n1:invokeResponse"/>
+ </wsdl:message>
+ <wsdl:portType name="DefaultPayloadProviderSEI">
+  <wsp:Policy>
+   <wsp:PolicyReference URI="#IF_IF_DefaultPayloadProviderSEI"/>
+  </wsp:Policy>
+  <wsdl:operation name="invoke">
+   <wsp:Policy>
+    <wsp:PolicyReference URI="#OP_IF_OP_invoke"/>
+   </wsp:Policy>
+   <wsdl:input message="tns:invoke"/>
+   <wsdl:output message="tns:invokeResponse"/>
+  </wsdl:operation>
+ </wsdl:portType>
+</wsdl:definitions>
