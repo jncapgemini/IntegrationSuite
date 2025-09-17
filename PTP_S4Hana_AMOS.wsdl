@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:tns="http://www.example.org/AMOS/"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  name="AMOS"
+                  targetNamespace="http://www.example.org/AMOS/">
+
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.example.org/AMOS/">
+      <xsd:element name="PTP_AMOS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="LIFNR" type="xsd:string"/>
+            <xsd:element name="BURKS" type="xsd:string"/>
+            <xsd:element name="EKORG" type="xsd:string"/>
+            <xsd:element name="KTOKK" type="xsd:string"/>
+            <xsd:element name="ANRED" type="xsd:string"/>
+            <xsd:element name="NAME1" type="xsd:string"/>
+            <xsd:element name="STRAS" type="xsd:string"/>
+            <xsd:element name="ORT01" type="xsd:string"/>
+            <xsd:element name="PSTLZ" type="xsd:string"/>
+            <xsd:element name="LAND1" type="xsd:string"/>
+            <xsd:element name="REGION" type="xsd:string"/>
+            <xsd:element name="TELF1" type="xsd:string"/>
+            <xsd:element name="LFURL" type="xsd:string"/>
+            <xsd:element name="STCD1" type="xsd:string"/>
+            <xsd:element name="STCD3" type="xsd:string"/>
+            <xsd:element name="WAERS" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="PTP_AMOSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="out" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+
+  <wsdl:message name="PTP_AMOSRequest">
+    <wsdl:part element="tns:PTP_AMOS" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="PTP_AMOSResponse">
+    <wsdl:part element="tns:PTP_AMOSResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:portType name="AMOS">
+    <wsdl:operation name="PTP_AMOS">
+      <wsdl:input message="tns:PTP_AMOSRequest"/>
+      <wsdl:output message="tns:PTP_AMOSResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+
+  <wsdl:binding name="AMOSSOAP" type="tns:AMOS">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="PTP_AMOS">
+      <soap:operation soapAction="http://www.example.org/AMOS/PTP_AMOS"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+
+  <wsdl:service name="AMOS">
+    <wsdl:port binding="tns:AMOSSOAP" name="AMOSSOAP">
+      <soap:address location="http://www.example.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+
+</wsdl:definitions>
