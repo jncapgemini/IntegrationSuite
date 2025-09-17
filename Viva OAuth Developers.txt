@@ -1,0 +1,17 @@
+{
+
+  "oauth": {
+
+    "createdate": "2025-08-26T21:38:25.443Z",
+
+    "clientid": "sb-13f3143b-fe95-44f4-83e7-f124a9bdb94b!b189543|it-rt-rise-test-c6zv2zxj!b56186",
+
+    "clientsecret": "3679b8f9-4820-420e-a5db-18131e62caa4$R4Rg5LGiIixVct5z2Yseh8FViRWFXeLMbJCrOKT3qoQ=",
+
+    "tokenurl": "https://rise-test-c6zv2zxj.authentication.us10.hana.ondemand.com/oauth/token",
+
+    "url": "https://rise-test-c6zv2zxj.it-cpi019-rt.cfapps.us10-002.hana.ondemand.com"
+
+  }
+
+}
