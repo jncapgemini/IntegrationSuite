@@ -1,9 +1,5 @@
 This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/"
-xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://sap.com/xi/SAPSCORE/SFIN"
-xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
-xmlns:n1="http://sap.com/xi/SAPGlobal/Global" targetNamespace="http://sap.com/xi/SAPSCORE/SFIN">
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://sap.com/xi/SAPSCORE/SFIN" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:n1="http://sap.com/xi/SAPGlobal/Global" targetNamespace="http://sap.com/xi/SAPSCORE/SFIN">
 <wsdl:documentation>
 <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
 </wsdl:documentation>
@@ -11,17 +7,13 @@ xmlns:n1="http://sap.com/xi/SAPGlobal/Global" targetNamespace="http://sap.com/xi
 <wsp:Policy wsu:Id="BN__JE_BulkCreation_bind">
 <wsp:ExactlyOne>
 <wsp:All>
-<saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"
-wsp:Optional="true"/>
+<saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true"/>
 <wsrmp:RMAssertion xmlns:wsrmp="http://docs.oasis-open.org/ws-rx/wsrmp/200702">
 <wsp:Policy xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
 </wsrmp:RMAssertion>
 <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
 <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
-xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing"
-xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
-xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 <wsp:Policy>
 <sp:TransportToken>
 <wsp:Policy>
@@ -47,15 +39,11 @@ xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 </wsp:All>
 </wsp:All>
 <wsp:All>
-<saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"
-wsp:Optional="true"/>
+<saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true"/>
 <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy"/>
 <wsaw:UsingAddressing xmlns:wsaw="http://schemas.xmlsoap.org/ws/2004/08/addressing"/>
 <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
-xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing"
-xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
-xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 <wsp:Policy>
 <sp:TransportToken>
 <wsp:Policy>
@@ -81,20 +69,14 @@ xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 </wsp:All>
 </wsp:All>
 <wsp:All>
-<saptrnbnd:OptimizedXMLTransfer xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"
-uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true"/>
+<saptrnbnd:OptimizedXMLTransfer xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true"/>
 <wsrmp:RMAssertion xmlns:wsrmp="http://docs.oasis-open.org/ws-rx/wsrmp/200702">
 <wsp:Policy xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
 </wsrmp:RMAssertion>
 <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
 <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
-xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing"
-xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
-xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 <wsp:Policy>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_… 1/32
 <sp:TransportToken>
 <wsp:Policy>
 <sp:HttpsToken>
@@ -119,15 +101,11 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </wsp:All>
 </wsp:All>
 <wsp:All>
-<saptrnbnd:OptimizedXMLTransfer xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"
-uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true"/>
+<saptrnbnd:OptimizedXMLTransfer xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true"/>
 <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy"/>
 <wsaw:UsingAddressing xmlns:wsaw="http://schemas.xmlsoap.org/ws/2004/08/addressing"/>
 <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
-xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing"
-xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
-xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 <wsp:Policy>
 <sp:TransportToken>
 <wsp:Policy>
@@ -157,17 +135,13 @@ xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 <wsp:Policy wsu:Id="BN__JE_BulkCreation_bind_soap12">
 <wsp:ExactlyOne>
 <wsp:All>
-<saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"
-wsp:Optional="true"/>
+<saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true"/>
 <wsrmp:RMAssertion xmlns:wsrmp="http://docs.oasis-open.org/ws-rx/wsrmp/200702">
 <wsp:Policy xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
 </wsrmp:RMAssertion>
 <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
 <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
-xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing"
-xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
-xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 <wsp:Policy>
 <sp:TransportToken>
 <wsp:Policy>
@@ -193,17 +167,11 @@ xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 </wsp:All>
 </wsp:All>
 <wsp:All>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_… 2/32
-<saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"
-wsp:Optional="true"/>
+<saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true"/>
 <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy"/>
 <wsaw:UsingAddressing xmlns:wsaw="http://schemas.xmlsoap.org/ws/2004/08/addressing"/>
 <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
-xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing"
-xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
-xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 <wsp:Policy>
 <sp:TransportToken>
 <wsp:Policy>
@@ -229,17 +197,13 @@ xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 </wsp:All>
 </wsp:All>
 <wsp:All>
-<saptrnbnd:OptimizedXMLTransfer xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"
-uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true"/>
+<saptrnbnd:OptimizedXMLTransfer xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true"/>
 <wsrmp:RMAssertion xmlns:wsrmp="http://docs.oasis-open.org/ws-rx/wsrmp/200702">
 <wsp:Policy xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
 </wsrmp:RMAssertion>
 <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
 <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
-xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing"
-xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
-xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 <wsp:Policy>
 <sp:TransportToken>
 <wsp:Policy>
@@ -265,15 +229,11 @@ xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 </wsp:All>
 </wsp:All>
 <wsp:All>
-<saptrnbnd:OptimizedXMLTransfer xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/"
-uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true"/>
+<saptrnbnd:OptimizedXMLTransfer xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true"/>
 <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy"/>
 <wsaw:UsingAddressing xmlns:wsaw="http://schemas.xmlsoap.org/ws/2004/08/addressing"/>
 <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
-<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
-xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing"
-xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility"
-xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 <wsp:Policy>
 <sp:TransportToken>
 <wsp:Policy>
@@ -293,8 +253,6 @@ xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
 <wsp:Policy>
 <sp:Strict/>
 </wsp:Policy>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_… 3/32
 </sp:Layout>
 </wsp:Policy>
 </sp:TransportBinding>
@@ -305,12 +263,10 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <wsp:Policy wsu:Id="IF__JournalEntryBulkCreationRequest_In">
 <wsp:ExactlyOne>
 <wsp:All>
-<sapcentraladmin:CentralAdministration xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/"
-wsp:Optional="true">
+<sapcentraladmin:CentralAdministration xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/" wsp:Optional="true">
 <sapcentraladmin:BusinessApplicationID>55E593A670A91FE0A0EDBC6C5C010ADE</sapcentraladmin:BusinessApplicationID>
 </sapcentraladmin:CentralAdministration>
-<sapcentraladmin:CentralAdministration xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/"
-wsp:Optional="true">
+<sapcentraladmin:CentralAdministration xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/" wsp:Optional="true">
 <sapcentraladmin:InterfaceCheckSum>29D92D305BFA07F74AD64408FA4B4400CE61B597</sapcentraladmin:InterfaceCheckSum>
 </sapcentraladmin:CentralAdministration>
 </wsp:All>
@@ -327,9 +283,7 @@ wsp:Optional="true">
 </wsp:ExactlyOne>
 </wsp:Policy>
 <wsdl:types>
-<xsd:schema xmlns="http://sap.com/xi/SAPSCORE/SFIN"
-xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0" xmlns:sprx="urn:sap.com:abap:proxy"
-xmlns:xi0="http://sap.com/xi/SAPGlobal/Global" targetNamespace="http://sap.com/xi/SAPSCORE/SFIN">
+<xsd:schema xmlns="http://sap.com/xi/SAPSCORE/SFIN" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0" xmlns:sprx="urn:sap.com:abap:proxy" xmlns:xi0="http://sap.com/xi/SAPGlobal/Global" targetNamespace="http://sap.com/xi/SAPSCORE/SFIN">
 <xsd:annotation>
 <xsd:documentation>
 <sprx:documentation version="1" baseURL="https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/esdt/docu/xsd_type?sap-client=150"/>
@@ -393,8 +347,6 @@ xmlns:xi0="http://sap.com/xi/SAPGlobal/Global" targetNamespace="http://sap.com/x
 </xsd:simpleType>
 <xsd:complexType name="Amount">
 <xsd:annotation>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_… 4/32
 <xsd:documentation xml:lang="EN">
 <ccts:RepresentationTerm>Amount</ccts:RepresentationTerm>
 </xsd:documentation>
@@ -493,8 +445,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:annotation>
 <xsd:documentation xml:lang="EN">
 <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_… 5/32
 </xsd:documentation>
 </xsd:annotation>
 <xsd:restriction base="xsd:token">
@@ -593,8 +543,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:attribute>
 </xsd:extension>
 </xsd:simpleContent>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_… 6/32
 </xsd:complexType>
 <xsd:simpleType name="BusinessDocumentMessageID.Content">
 <xsd:restriction base="xsd:token">
@@ -693,8 +641,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:complexType>
 <xsd:simpleType name="BusinessScopeInstanceID.Content">
 <xsd:restriction base="xsd:token">
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_… 7/32
 <xsd:maxLength value="36"/>
 <xsd:minLength value="1"/>
 </xsd:restriction>
@@ -793,8 +739,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:simpleContent>
 <xsd:extension base="ChartOfAccountsItemCode.Content">
 <xsd:attribute name="listID">
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_… 8/32
 <xsd:simpleType>
 <xsd:restriction base="xsd:token">
 <xsd:maxLength value="4"/>
@@ -893,8 +837,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
 </xsd:documentation>
 </xsd:annotation>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_… 9/32
 <xsd:restriction base="xsd:token">
 <xsd:maxLength value="3"/>
 <xsd:minLength value="2"/>
@@ -993,8 +935,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:minLength value="1"/>
 </xsd:restriction>
 </xsd:simpleType>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 10/32
 <xsd:simpleType name="CustomerPostOfficeBox">
 <xsd:annotation>
 <xsd:documentation xml:lang="EN">
@@ -1093,8 +1033,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:simpleType>
 <xsd:restriction base="xsd:token">
 <xsd:maxLength value="60"/>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 11/32
 <xsd:minLength value="1"/>
 </xsd:restriction>
 </xsd:simpleType>
@@ -1193,8 +1131,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:simpleType>
 <xsd:simpleType name="Email">
 <xsd:annotation>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 12/32
 <xsd:documentation xml:lang="EN">
 <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
 </xsd:documentation>
@@ -1293,8 +1229,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:simpleType>
 <xsd:simpleType name="FixedAssetID">
 <xsd:annotation>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 13/32
 <xsd:documentation xml:lang="EN">
 <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
 </xsd:documentation>
@@ -1393,8 +1327,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:restriction>
 </xsd:simpleType>
 </xsd:attribute>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 14/32
 <xsd:attribute name="listVersionID">
 <xsd:simpleType>
 <xsd:restriction base="xsd:token">
@@ -1493,8 +1425,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:sequence>
 <xsd:element name="MessageHeader" type="BusinessDocumentMessageHeader"/>
 <xsd:element name="JournalEntryCreateRequest" maxOccurs="unbounded" type="JournalEntryCreateRequestMessage"/>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 15/32
 </xsd:sequence>
 </xsd:complexType>
 <xsd:complexType name="JournalEntryCreateRequestJournalEntry">
@@ -1593,8 +1523,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:sequence>
 </xsd:complexType>
 <xsd:complexType name="JournalEntryCreateRequestJournalEntryCreditorItemPayeeBankAccount">
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 16/32
 <xsd:sequence>
 <xsd:element name="Country" type="CountryCode"/>
 <xsd:element name="BankNumber" minOccurs="0" type="BankNumber"/>
@@ -1693,8 +1621,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:element name="GLAccount" type="ChartOfAccountsItemCode"/>
 <xsd:element name="AmountInTransactionCurrency" type="Amount"/>
 <xsd:element name="AmountInCompanyCodeCurrency" minOccurs="0" type="Amount"/>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 17/32
 <xsd:element name="AmountInGroupCurrency" minOccurs="0" type="Amount"/>
 <xsd:element name="AmountInFreeDefinedCurrency1" minOccurs="0" type="Amount"/>
 <xsd:element name="DebitCreditCode" minOccurs="0" type="DebitCreditCode"/>
@@ -1793,8 +1719,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:element name="Email" minOccurs="0" type="Email"/>
 <xsd:element name="ShortStreetName" minOccurs="0" type="StreetName"/>
 <xsd:element name="CustomerPostOfficeBox" minOccurs="0" type="CustomerPostOfficeBox"/>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 18/32
 <xsd:element name="PostOfficeBoxPostlCode" minOccurs="0" type="PostOfficeBoxPostalCode"/>
 <xsd:element name="PostlCodeforCustomer" minOccurs="0" type="PostlCode"/>
 <xsd:element name="BankDetailsReference" minOccurs="0" type="BankDetailReference"/>
@@ -1893,8 +1817,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:sequence>
 </xsd:complexType>
 <xsd:complexType name="JournalEntryCreateRequestJournalEntryWithholdingTaxItem">
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 19/32
 <xsd:sequence>
 <xsd:element name="ReferenceDocumentItem" minOccurs="0" type="BusinessTransactionDocumentItemID"/>
 <xsd:element name="WithholdingTaxType" type="WithholdingTaxType"/>
@@ -1993,8 +1915,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:documentation>
 </xsd:annotation>
 <xsd:restriction base="xsd:language">
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 20/32
 <xsd:maxLength value="9"/>
 <xsd:minLength value="2"/>
 </xsd:restriction>
@@ -2093,8 +2013,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:restriction>
 </xsd:simpleType>
 <xsd:simpleType name="OplAcctgDocItmCntrySpcfcRef1">
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 21/32
 <xsd:annotation>
 <xsd:documentation xml:lang="EN">
 <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
@@ -2193,8 +2111,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:restriction base="xsd:token">
 <xsd:maxLength value="13"/>
 <xsd:minLength value="1"/>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 22/32
 </xsd:restriction>
 </xsd:simpleType>
 <xsd:complexType name="PaymentBlockingReasonCode">
@@ -2293,8 +2209,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:simpleType name="PaymentReferenceID">
 <xsd:annotation>
 <xsd:documentation xml:lang="EN">
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 23/32
 <ccts:RepresentationTerm>Identifier</ccts:RepresentationTerm>
 </xsd:documentation>
 </xsd:annotation>
@@ -2393,8 +2307,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:simpleType>
 <xsd:simpleType name="PostOfficeBox">
 <xsd:annotation>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 24/32
 <xsd:documentation xml:lang="EN">
 <ccts:RepresentationTerm>Text</ccts:RepresentationTerm>
 </xsd:documentation>
@@ -2493,8 +2405,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:annotation>
 <xsd:restriction base="xsd:token">
 <xsd:maxLength value="10"/>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 25/32
 <xsd:minLength value="1"/>
 </xsd:restriction>
 </xsd:simpleType>
@@ -2593,8 +2503,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:maxLength value="2"/>
 </xsd:restriction>
 </xsd:simpleType>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 26/32
 <xsd:simpleType name="ReversalReferenceDocument">
 <xsd:annotation>
 <xsd:documentation xml:lang="EN">
@@ -2693,8 +2601,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:restriction>
 </xsd:simpleType>
 <xsd:simpleType name="ServiceDocType_GFN">
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 27/32
 <xsd:annotation>
 <xsd:documentation xml:lang="EN">
 <ccts:RepresentationTerm>Code</ccts:RepresentationTerm>
@@ -2793,8 +2699,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:minLength value="1"/>
 </xsd:restriction>
 </xsd:simpleType>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 28/32
 </xsd:attribute>
 <xsd:attribute name="listVersionID">
 <xsd:simpleType>
@@ -2893,8 +2797,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:documentation>
 </xsd:annotation>
 <xsd:restriction base="xsd:token">
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 29/32
 <xsd:maxLength value="2"/>
 <xsd:minLength value="1"/>
 </xsd:restriction>
@@ -2993,8 +2895,6 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 <xsd:restriction base="xsd:token">
 <xsd:maxLength value="24"/>
 <xsd:minLength value="1"/>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 30/32
 </xsd:restriction>
 </xsd:simpleType>
 <xsd:simpleType name="WithholdingTaxCode">
@@ -3031,9 +2931,7 @@ https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/b
 </xsd:restriction>
 </xsd:simpleType>
 </xsd:schema>
-<xsd:schema xmlns="http://sap.com/xi/SAPGlobal/Global"
-xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0" xmlns:sprx="urn:sap.com:abap:proxy"
-xmlns:xi0="http://sap.com/xi/SAPGlobal/Global" targetNamespace="http://sap.com/xi/SAPGlobal/Global">
+<xsd:schema xmlns="http://sap.com/xi/SAPGlobal/Global" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0" xmlns:sprx="urn:sap.com:abap:proxy" xmlns:xi0="http://sap.com/xi/SAPGlobal/Global" targetNamespace="http://sap.com/xi/SAPGlobal/Global">
 <xsd:import namespace="http://sap.com/xi/SAPSCORE/SFIN"/>
 <xsd:annotation>
 <xsd:documentation>
@@ -3077,8 +2975,7 @@ xmlns:xi0="http://sap.com/xi/SAPGlobal/Global" targetNamespace="http://sap.com/x
 </wsp:Policy>
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
 <wsdl:operation name="JournalEntryBulkCreationRequest_In">
-<soap:operation soapAction="http://sap.com/xi/SAPSCORE/SFIN/JournalEntryBulkCreationRequest_In/JournalEntryBulkCreationRequest_InRequest"
-style="document"/>
+<soap:operation soapAction="http://sap.com/xi/SAPSCORE/SFIN/JournalEntryBulkCreationRequest_In/JournalEntryBulkCreationRequest_InRequest" style="document"/>
 <wsdl:input>
 <soap:body use="literal"/>
 </wsdl:input>
@@ -3090,25 +2987,18 @@ style="document"/>
 </wsp:Policy>
 <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
 <wsdl:operation name="JournalEntryBulkCreationRequest_In">
-<wsoap12:operation soapAction="http://sap.com/xi/SAPSCORE/SFIN/JournalEntryBulkCreationRequest_In/JournalEntryBulkCreationRequest_InRequest"
-style="document"/>
+<wsoap12:operation soapAction="http://sap.com/xi/SAPSCORE/SFIN/JournalEntryBulkCreationRequest_In/JournalEntryBulkCreationRequest_InRequest" style="document"/>
 <wsdl:input>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 31/32
 <wsoap12:body use="literal"/>
 </wsdl:input>
 </wsdl:operation>
 </wsdl:binding>
 <wsdl:service name="JE_BulkCreation_bind">
 <wsdl:port name="JE_BulkCreation_bind" binding="tns:JE_BulkCreation_bind">
-<soap:address
-location="https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_bulkcreation_bind/je_bulkcreation_b
+<soap:address location="https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_bulkcreation_bind/je_bulkcreation_bind"/>
 </wsdl:port>
 <wsdl:port name="JE_BulkCreation_bind_soap12" binding="tns:JE_BulkCreation_bind_soap12">
-<wsoap12:address
-location="https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_bulkcreation_bind/je_bulkcreation_b
+<wsoap12:address location="https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je_bulkcreation_bind/je_bulkcreation_bind"/>
 </wsdl:port>
 </wsdl:service>
 </wsdl:definitions>
-9/16/25, 12:30 PM vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationre…
-https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/xip/sap/journalentrybulkcreationreques/150/je… 32/32
