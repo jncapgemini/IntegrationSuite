@@ -1,0 +1,22 @@
+{
+  "d" : {
+    "results" : [
+      {
+        "__metadata" : {
+          "id" : "https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/opu/odata/sap/API_PROFITCENTER_SRV/A_ProfitCenterText(Language='DE',ControllingArea='HU01',ProfitCenter='SAP-DUMMY',ValidityEndDate=datetime'9999-12-31T00%3A00%3A00')",
+          "uri" : "https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/opu/odata/sap/API_PROFITCENTER_SRV/A_ProfitCenterText(Language='DE',ControllingArea='HU01',ProfitCenter='SAP-DUMMY',ValidityEndDate=datetime'9999-12-31T00%3A00%3A00')",
+          "type" : "API_PROFITCENTER_SRV.A_ProfitCenterTextType"
+        },
+        "Language" : "",
+        "ControllingArea" : "",
+        "ProfitCenter" : "",
+        "ValidityEndDate" : "",
+        "ValidityStartDate" : "",
+        "ProfitCenterName" : "",
+        "ProfitCenterLongName" : "",
+        "to_ProfitCenter" : {
+          "__deferred" : {
+            "uri" : "https://vhanads4ci.ifrs.vivaaerobus.com:44300/sap/opu/odata/sap/API_PROFITCENTER_SRV/A_ProfitCenterText(Language='DE',ControllingArea='HU01',ProfitCenter='SAP-DUMMY',ValidityEndDate=datetime'9999-12-31T00%3A00%3A00')/to_ProfitCenter"
+          }
+        }
+      },
